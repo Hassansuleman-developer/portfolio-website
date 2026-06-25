@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #0b1c2c; /* dark blue background */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+    background: #081522;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+}
+
+nav h2 {
+    color: #00bfff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bfff;
+}
+
+/* SECTIONS */
+section {
+    width: 85%;
+    margin: 60px auto;
+}
+
+/* HOME */
+#home {
+    text-align: center;
+    padding: 100px 0;
+}
+
+#home h1 {
+    font-size: 40px;
+    color: #00bfff;
+}
+
+#home p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #cccccc;
+}
+
+/* ABOUT */
+#about p {
+    margin-top: 10px;
+    color: #d1d1d1;
+}
+
+/* EDUCATION */
+#education p {
+    margin-top: 10px;
+    color: #d1d1d1;
+}
+
+/* SKILLS */
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+#skills ul li {
+    background: #122b44;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 8px;
+    border: 1px solid #00bfff;
+}
+
+/* PROJECTS */
+.project {
+    background: #122b44;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 10px;
+    border-left: 4px solid #00bfff;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #00bfff;
+    text-decoration: none;
+}
+
+/* CONTACT */
+#contact p {
+    margin-top: 10px;
+    color: #d1d1d1;
+}
+
+#contact a {
+    color: #00bfff;
+    text-decoration: none;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #081522;
+    margin-top: 40px;
+    color: #888;
+}
+/* HERO SECTION */
+.hero {
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    color: #00bfff;
+}
+
+.hero-content h3 {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #ffffff;
+}
+
+.hero-content p {
+    margin-top: 15px;
+    color: #cccccc;
+}
+
+/* BUTTONS */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: #00bfff;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #0099cc;
+    transform: scale(1.05);
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #00bfff;
+    color: #00bfff;
+}
+
+.btn-outline:hover {
+    background: #00bfff;
+    color: #000;
+}
