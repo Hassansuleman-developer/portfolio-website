@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hassan Suleman - Portfolio</title>
+    <title>Hassan Suleman | Python Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,85 +12,305 @@
     <!-- NAVBAR -->
     <header>
         <nav>
-            <h2>Hassan Suleman</h2>
-            <ul>
-                <li><a href="#home">Home</a></li>
+            <div class="logo">
+                <h2>Hassan Suleman</h2>
+                <span class="logo-dot">.</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
+    <!-- HERO SECTION -->
     <section id="home" class="hero">
-    <div class="hero-content">
-        <h1>Hi, I'm Hassan Suleman</h1>
-        <h3>Aspiring Python Developer</h3>
-        <p>I build clean, efficient and user-friendly web applications.</p>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="greeting">Hello, I'm</span>
+                <h1>Hassan Suleman</h1>
+                <div class="typed-wrapper">
+                    <span class="typed-text"></span>
+                    <span class="cursor"></span>
+                </div>
+                <p>Passionate about building clean, efficient, and user-friendly web applications. 
+                <br>Currently pursuing BS Computer Science.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i> View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Contact Me
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/Hassansuleman-developer" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/hassan-suleman-pythondevelopor" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:hksmartdevelopor@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-circle">
+                    <!-- User Image Added Here -->
+                    <img src="profile.jpg" alt="Hassan Suleman" class="profile-img">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
 
-        <a href="#projects" class="btn">View My Work</a>
-        <a href="#contact" class="btn btn-outline">Contact Me</a>
-    </div>
-</section>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <div class="section-header">
+            <h2>About Me</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a passionate Computer Science student at Govt Post Graduate College Karak, currently in my 4th semester. I have a strong foundation in web development and programming languages.</p>
+                <p>My journey in tech started with a curiosity about how things work, which evolved into a deep interest in creating meaningful digital solutions. I'm constantly learning and exploring new technologies to enhance my skills.</p>
+                <div class="about-info">
+                    <div class="info-item">
+                        <span class="label"><i class="fas fa-graduation-cap"></i> Education:</span>
+                        <span>BS Computer Science (4th Semester)</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label"><i class="fas fa-calendar"></i> Expected Graduation:</span>
+                        <span>2028</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label"><i class="fas fa-map-marker-alt"></i> Location:</span>
+                        <span>Karak, Pakistan</span>
+                    </div>
+                </div>
+                <a href="#contact" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Let's Connect
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- EDUCATION SECTION -->
-    <section id="education">
-        <h2>Education</h2>
-        <p>Govt Post Graduate College Karak</p>
-        <p>BS Computer Science (4th Semester)</p>
-        <p>Expected Graduation: 2028</p>
+    <section id="education" class="section">
+        <div class="section-header">
+            <h2>Education</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="education-timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>BS Computer Science</h3>
+                    <p class="institution">Govt Post Graduate College Karak</p>
+                    <p class="year">2024 - 2028</p>
+                    <p class="description">Currently in 4th semester, maintaining excellent academic standing while actively participating in various tech initiatives and projects.</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-icon">
+                    <i class="fas fa-school"></i>
+                </div>
+                <div class="timeline-content">
+                    <h3>Intermediate (F.Sc Pre-Engineering)</h3>
+                    <p class="institution">Govt Post Graduate College Karak</p>
+                    <p class="year">2022 - 2024</p>
+                    <p class="description">Built a strong foundation in mathematics and sciences, developing analytical and problem-solving skills.</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- SKILLS SECTION -->
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML (Basic Strong)</li>
-            <li>CSS (Basic Strong)</li>
-            <li>JavaScript (Basic)</li>
-            <li>Python</li>
-            <li>C++</li>
-            <li>OOP</li>
-            <li>Data Structures</li>
-        </ul>
+    <section id="skills" class="section">
+        <div class="section-header">
+            <h2>Skills</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><i class="fas fa-code"></i> Languages</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span>Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>C++</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-laptop-code"></i> Web Development</h3>
+                <div class="skill-items">
+                    <div class="skill-item">
+                        <span>HTML5</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>CSS3</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>React</span>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 40%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-brain"></i> Core Concepts</h3>
+                <div class="skill-tags">
+                    <span class="tag">OOP</span>
+                    <span class="tag">Data Structures</span>
+                    <span class="tag">Algorithms</span>
+                    <span class="tag">Database Management</span>
+                    <span class="tag">Problem Solving</span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- PROJECTS SECTION -->
-    <section id="projects">
-        <h2>Projects</h2>
-
-        <div class="project">
-            <h3>E-College Website</h3>
-            <p>Student problem solving management system website</p>
-            <a href="https://github.com/Hassansuleman-developer/e-college-website" target="_blank">
-                View on GitHub
-            </a>
+    <section id="projects" class="section">
+        <div class="section-header">
+            <h2>Projects</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header">
+                    <i class="fas fa-graduation-cap project-icon"></i>
+                    <span class="project-status">In Progress</span>
+                </div>
+                <h3>E-College Website</h3>
+                <p>Student problem solving management system designed to streamline communication and issue resolution within educational institutions.</p>
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Python</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/Hassansuleman-developer/e-college-website" target="_blank" class="btn btn-small">
+                        <i class="fab fa-github"></i> View Code
+                    </a>
+                    <a href="#" class="btn btn-small btn-outline">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- CONTACT SECTION -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: hksmartdevelopor@gmail.com</p>
-        <p>Phone: 03117207235 (WhatsApp only)</p>
-        <p>
-            LinkedIn: 
-            <a href="https://www.linkedin.com/in/hassan-suleman-pythondevelopor" target="_blank">
-                Profile
-            </a>
-        </p>
-        <p>
-            GitHub: 
-            <a href="https://github.com/Hassansuleman-developer" target="_blank">
-                Profile
-            </a>
-        </p>
+    <section id="contact" class="section">
+        <div class="section-header">
+            <h2>Get In Touch</h2>
+            <div class="underline"></div>
+        </div>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <a href="mailto:hksmartdevelopor@gmail.com">hksmartdevelopor@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4>Phone</h4>
+                        <span>03117207235 (WhatsApp only)</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <a href="https://www.linkedin.com/in/hassan-suleman-pythondevelopor" target="_blank">Connect on LinkedIn</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div>
+                        <h4>GitHub</h4>
+                        <a href="https://github.com/Hassansuleman-developer" target="_blank">View GitHub Profile</a>
+                    </div>
+                </div>
+            </div>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject">
+                <textarea rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2026 Hassan Suleman. All Rights Reserved.</p>
+        <div class="footer-content">
+            <div class="footer-text">
+                <h3>Hassan Suleman</h3>
+                <p>Aspiring Python Developer | Building the future, one line of code at a time.</p>
+            </div>
+            <div class="footer-social">
+                <a href="https://github.com/Hassansuleman-developer" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/hassan-suleman-pythondevelopor" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:hksmartdevelopor@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Hassan Suleman. All Rights Reserved. | Made with <i class="fas fa-heart"></i></p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
